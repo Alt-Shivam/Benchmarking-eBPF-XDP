@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt -y install zlib1g-dev build-essential python python3-distutils
 git clone https://github.com/cisco-system-traffic-generator/trex-core.git
 cd trex-core/
