@@ -1,0 +1,7 @@
+/dpdk...//build/examples
+./dpdk-helloworld -l 0-1 -n 1
+
+-l : for core no 
+-n : for no of ram slots
+
+dpdk-devbind.py -s
