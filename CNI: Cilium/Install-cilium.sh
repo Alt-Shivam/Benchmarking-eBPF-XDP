@@ -27,16 +27,6 @@ rm cilium-linux-amd64.tar.gz{,.sha256sum}
 
 # Install Cilium
 cilium install
-flag=$(echo $?)
-
-# Test the deployment
-if [ flag != 0 ]; then
-    echo "Deployment failed, there is something not right!"
-    exit 3
-else
-    echo "Cilium Deployed Successfully!"
-    exit 0
-fi
 
 echo "Currently Cilium offers the following advanced features."
 echo "Required Kernel Versions for Advanced Features"
