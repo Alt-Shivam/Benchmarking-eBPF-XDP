@@ -4,4 +4,5 @@
 -l : for core no 
 -n : for no of ram slots
 
+
 dpdk-devbind.py -s
