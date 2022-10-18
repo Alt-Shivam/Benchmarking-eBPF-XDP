@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prox-fwd
+  labels:
+    app: prox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prox
+  template:
+    metadata:
+      labels:
+        app: prox
+    spec:
+      containers:
+      - name: prox-fwd
+        image: shivank1128/prox
+        command: [ "/bin/bash", "-c", "--" ]
+        args: ["ls -al"]
