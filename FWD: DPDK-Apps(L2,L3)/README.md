@@ -14,5 +14,5 @@ docker build .
 ```
 * OR to pull from DocketHub.
 ```
-docker pull shivank1128/l3fwd && docker pull shivank1128/l2fwd
+docker pull shivank1128/l2l3fwd
 ```
