@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vpp-fwd
+  labels:
+    app: vpp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vpp
+  template:
+    metadata:
+      labels:
+        app: vpp
+    spec:
+      containers:
+      - name: vpp-fwd
+        image: shivank1128/vpp
+        command: [ "/bin/bash", "-c", "--" ]
+        args: ["ls -al"]
