@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: trex
-        image: trexcisco/trex:2.36
+        image: shivank1128/trex
         command: [ "/bin/bash", "-c", "--" ]
-        args: [ "sleep 300000000" ]
+        args: ["cd /root/v3.00; ./t-rex-64 -i --no-scapy-server --nc --no-watchdog;"]
         ports:
         - containerPort: 4500
