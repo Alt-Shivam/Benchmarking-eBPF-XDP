@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: l3fwd
+  labels:
+    app: l3fwd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: l3fwd
+  template:
+    metadata:
+      labels:
+        app: l3fwd
+    spec:
+      containers:
+      - name: l3fwd
+        image: shivank1128/l2l3fwd
+        command: [ "/bin/bash", "-c", "--" ]
+        args: ["ls -al"]
