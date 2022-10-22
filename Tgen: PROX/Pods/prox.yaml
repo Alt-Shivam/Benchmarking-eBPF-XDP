@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trex-deployment
+  labels:
+    app: trex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trex
+  template:
+    metadata:
+      labels:
+        app: trex
+    spec:
+      containers:
+      - name: trex
+        image: shivank1128/trex
+        command: [ "/bin/bash", "-c", "--" ]
+        args: ["sleep 10000"]
+        ports:
+        - containerPort: 4500
