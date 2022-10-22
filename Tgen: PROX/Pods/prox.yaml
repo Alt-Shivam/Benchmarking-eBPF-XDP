@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: trex-deployment
+  name: prox-deployment
   labels:
     app: trex
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trex
+      app: prox
   template:
     metadata:
       labels:
-        app: trex
+        app: prox
     spec:
       containers:
-      - name: trex
-        image: shivank1128/trex
+      - name: prox
+        image: shivank1128/prox
         command: [ "/bin/bash", "-c", "--" ]
         args: ["sleep 10000"]
         ports:
