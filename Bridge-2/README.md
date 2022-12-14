@@ -1,8 +1,7 @@
 AF_XDP based bridge
 ===================
 
-Transfers L2 packets between two interfaces (in both directions) as is
-with the help of AF_XDP technology https://www.kernel.org/doc/html/v4.18/networking/af_xdp.html
+Transfers L2 packets between two interfaces (in both directions) 
 
 Packets from client to world travel via userspace and can be controlled (find *validate_packets*,
    an application logic stub).
