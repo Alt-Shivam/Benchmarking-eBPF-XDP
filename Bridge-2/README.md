@@ -1,4 +1,4 @@
-AF_XDP based bridge
+XDP based bridge
 ===================
 
 Transfers L2 packets between two interfaces (in both directions) 
