@@ -1,0 +1,19 @@
+# WARNING: This is an example pod spec only. Remove all comments before use.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: afxdp-pod
+  annotations:
+    k8s.v1.cni.cncf.io/networks: afxdp-network
+spec:
+  containers:
+  - name: afxdp
+    image: nginx:1.7.9
+    imagePullPolicy: IfNotPresent
+    resources:
+      requests:
+        afxdp/myPool: '1'
+      limits:
+        afxdp/myPool: '1'
+  restartPolicy: Never
