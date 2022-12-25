@@ -1,5 +1,3 @@
-# WARNING: This is an example pod spec only. Remove all comments before use.
-
 apiVersion: v1
 kind: Pod
 metadata:
