@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Root user
-sudo su
 
 # Install required packages
 sudo apt-get install build-essential meson python3-pyelftools libnuma-dev pkgconf -y
